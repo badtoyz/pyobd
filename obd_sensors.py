@@ -67,7 +67,8 @@ def cpass(code):
     return code
 
 def fuel_trim_percent(code):
-    code = hex_to_int(code)
+    #code = hex_to_int(code)
+	code = 128.0
     return (code - 128.0) * 100.0 / 128
 
 def dtc_decrypt(code):
